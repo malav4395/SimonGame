@@ -13,7 +13,7 @@ var randomChosenColor;
 using started variable to only allow one keypress to start the game and
 then after it will reset once player plays a wrong move
 */
-$(document).on("keydown", function() {
+$(document).on("click", function() {
   if (!started) {
     nextSequence(); //calling next sequence function which will generate random number
     $("#level-title").text("Level " + level); //chnaging the Title as level
